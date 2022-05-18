@@ -1,0 +1,50 @@
+
+.services{
+    width: 100%;
+    padding: 13rem 0;
+    margin-bottom: 60px;
+    background-image: url(img/arabesque-left-top.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: -1;
+}
+.services-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-content-description{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.services-content-description .box{
+    padding: 20px;
+}
+.services-content-description .box .inner img{
+    width: 90px;
+    margin-bottom: 1rem;
+}
+.services-content-description .box .inner{
+    font-size: var(--h3-font-size);
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--first-color);
+    padding: 10px;
+    position: relative;
+}
+.services-content-description .box .inner::before,
+.services-content-description .box .inner::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+}
+
+

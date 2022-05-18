@@ -1,0 +1,134 @@
+/* Start Services Section */
+.services{
+    width: 100%;
+    padding: 7rem 0;
+    background-image: url(img/arabesque-left-top.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: -1;
+}
+.services-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services-content-description{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.services-content-description .box{
+    padding: 20px;
+}
+.services-content-description .box .inner img{
+    width: 90px;
+    margin-bottom: 1rem;
+}
+.services-content-description .box .inner{
+    font-size: var(--h3-font-size);
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--first-color);
+    padding: 10px;
+    position: relative;
+}
+.services-content-description .box .inner::before,
+.services-content-description .box .inner::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+}
+.services-content-description .box .inner::before{
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.services-content-description .box .inner::after{
+    top: 0;
+    right: 0;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.services-content-description .box:hover .inner::before,
+.services-content-description .box:hover .inner::after{
+    width: 100%;
+    height: 100%;
+    border-color: var(--first-color);
+}
+/* End Services Section */
+/* Start Package Section */
+.package{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--main-color);
+    border-radius: 0 300px;
+}
+.package-cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+.card{
+    background-color: var(--white-color);
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.25);
+    border-radius: 30px;
+    padding: 1.5rem;
+    margin: 10px auto;
+    transition: all 0.4s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.card-title h1{
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    line-height: 2.25rem;
+    color: var(--black-color);
+}
+.card-items{
+    margin-bottom: 1rem;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.item p{
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: var(--first-color);
+    margin-left: 0.5rem;
+}
+.card-items .item p span{
+    font-size: var(--small-font-size);
+    font-weight: 300;
+}
+.item .check-icon,
+.item .x-icon{
+    font-size: var(--h3-font-size);
+}
+.item .x-icon,
+.item .not{
+    color: var(--second-color);
+}
+.item .check-icon{
+    color: var(--first-color);
+}
+.card-items button{
+    margin: 1rem auto 0;
+}
+/* End Package Section */
+

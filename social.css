@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+
+
+.wrapper{
+
+	position: absolute;
+    padding-left: 500px;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.toggle_button{
+	width: 200px;
+	height: 65px;
+	background: #f7e6df;
+	border-radius: 50px;
+	overflow: hidden;
+	transition: all 0.2s ease;
+}
+
+.toggle_button ul li a{
+	display: flex;
+	align-items: center;
+	height: 65px;
+	padding: 0 35px;
+}
+
+.toggle_button ul li a.share_btn{
+	justify-content: center;
+	cursor: pointer;
+}
+
+.toggle_button ul li a.share_btn .icon{
+	width: 35px;
+	height: 35px;
+	background: #75492b;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	transition: all 1s ease;
+}
+
+.toggle_button ul li a .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+
+.toggle_button ul li a.sm .icon{
+	position: relative;
+	width: 35px;
+	height: 35px;
+/* 	background: #25d366;
+ */	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.toggle_button ul li a .text{
+	letter-spacing: 2px;
+}
+
+.toggle_button ul li a.facebook .icon{
+	background: #3b5998;
+}
+
+.toggle_button ul li a.facebook .text{
+	color: #3b5998;
+}
+
+.toggle_button ul li a.twitter .icon{
+	background: #1da1f2;
+}
+
+.toggle_button ul li a.twitter .text{
+	color: #1da1f2;
+}
+
+.toggle_button ul li a.whatsApp .icon{
+	background: #25d366;
+}
+
+.toggle_button ul li a.whatsApp .text{
+	color: #25d366;
+}
+
+.toggle_button ul li a.email .icon{
+	background: lightblue;
+}
+
+.toggle_button ul li a.email .text{
+	color: lightblue;
+}
+
+.toggle_button.active{
+	height: 325px;
+}
+
+.toggle_button.active ul li a.share_btn .icon{
+	transform: rotate(45deg);
+}
+
+.toggle_button ul li a.sm{
+	visibility: hidden;
+}
+
+.toggle_button.active ul li a.sm {
+    visibility: visible;
+    transition-delay: 0.3s;
+}
